@@ -18,7 +18,7 @@ public class GiftTax {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Value of the gift?");
-        int value = Integer.valueOf(scan.nextLine());
+        int value = Integer.parseInt(scan.nextLine());
         double tax = calculateTax(value);
 
         if (tax == 0) {
